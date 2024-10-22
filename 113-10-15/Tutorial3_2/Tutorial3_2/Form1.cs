@@ -9,15 +9,15 @@ namespace Tutorial3_2
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            double kms;
-            double liters;
+            int kms;
+            int liters;
             //double average;
 
-            kms = double.Parse(txbKM.Text);
-            liters = double.Parse(txbLiter.Text);
+            kms = int.Parse(txbKM.Text);
+            liters = int.Parse(txbLiter.Text);
             //average = kms / liters;
 
-            lblShow.Text = (kms / liters).ToString("n3");
+            lblShow.Text = ( kms / (double)liters).ToString("n3");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
